@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.stage.Stage?>
+
+<Stage fx:controller="application.controller.Controller" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" title="Hauptmenü">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="200" prefWidth="200">
+            <children>
+               <BorderPane prefHeight="200.0" prefWidth="200.0">
+                  <center>
+                     <Button onAction="#btnPlayTicTacToeClicked" mnemonicParsing="false" text="Spiele Tic Tac Toe" BorderPane.alignment="CENTER" />
+                  </center>
+               </BorderPane>
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>
