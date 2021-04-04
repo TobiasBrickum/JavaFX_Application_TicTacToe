@@ -15,6 +15,7 @@ public class TicTacToeGuiStageStart
 	
 	//#####	attributes #########################################
 	private static TicTacToeGuiStageStart ticTacToeGuiStageMain = null;
+	private static boolean ticTacToeGuiStageMainInitia = false;
 	
 	private String FXMLGuiPathGameTicTacToe; 
 	private Stage stageGameTicTacToe;
@@ -29,10 +30,26 @@ public class TicTacToeGuiStageStart
 	// singleton
 	public static TicTacToeGuiStageStart getTicTacToeGuiStage()
 	{
-		if(ticTacToeGuiStageMain == null)
+		// create
+		if(ticTacToeGuiStageMain == null )
 		{
-			ticTacToeGuiStageMain = new TicTacToeGuiStageStart();
-			System.out.println("createt once");
+			ticTacToeGuiStageMain = new TicTacToeGuiStageStart();	
+			System.out.println("finish createt TicTacToeGuiStageStart");
+		}
+		
+		// initial
+		if(ticTacToeGuiStageMainInitia == false)
+		{
+			try 
+			{
+				ticTacToeGuiStageMain.startMethod();
+				ticTacToeGuiStageMainInitia = true;
+				System.out.println("finish iniial TicTacToeGuiStageStart");
+			} 
+			catch (IOException e) 
+			{
+				e.printStackTrace();
+			}
 		}
 		
 		return ticTacToeGuiStageMain;
@@ -62,7 +79,7 @@ public class TicTacToeGuiStageStart
 	
 	//#####	normal methods #########################################
 
-	public void startMethod() throws IOException 
+	private void startMethod() throws IOException 
 	{
 //		// work not
 //		// problem: Application launch must not be called more than once
