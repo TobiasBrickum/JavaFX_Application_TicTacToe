@@ -17,7 +17,7 @@ public class Controller
 	private void btnPlayTicTacToeClicked(ActionEvent event)
 	{	
 //		// 1
-//		// after this, text all attributes createt, but later attributes are null
+//		// currently useless
 //		TicTacToeGuiStageStart test = TicTacToeGuiStageStart.getTicTacToeGuiStage();
 //		try 
 //		{
