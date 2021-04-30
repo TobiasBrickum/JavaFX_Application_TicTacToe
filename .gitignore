@@ -1,7 +1,9 @@
 # ignore folder
 **settings/
 *Tic_Tac_To
+*Tic_Tac_To_Multi/bin
 *Realease
+
 
 # ignore .endings
 *.class
